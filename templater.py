@@ -1,6 +1,6 @@
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-
+from collections import OrderedDict
 
 
 
@@ -13,7 +13,14 @@ def main():
     # Get the template
     template = env.get_template('web.html')
 
-    test="testdata"
+
+    header= "Joseph Mahon"
+
+    top_choices = OrderedDict()
+    top_choices["home"] = "home.html"
+    top_choices["projects"] = "projects.html"
+    top_choices["test"] = "test.html"
+
     test2 = [
             "bla1",
             "bla2",
@@ -23,8 +30,8 @@ def main():
             
 
     html_data = template.render(
-                                test=test,
-                                test2=test2,
+                                header=header,
+                                top_choices=top_choices,
                                 )
 
     with open("completed_template.html", "w") as file:

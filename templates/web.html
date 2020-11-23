@@ -15,7 +15,7 @@
   }
 
 html { 
-    background: #2d3d31; 
+    background: #404040; 
     color: white; }
 
   a { 
@@ -34,17 +34,16 @@ html {
 
 <h1>Joseph Mahon</h1>
 
+<nav>
+  |
+  {% for k,v in top_choices.items() %}
+    <a href="{{v}}">{{k}}</a> | 
+  {% endfor %}
 
+</nav>
 
 
 {{ test }}
 
 
 
-{% for i in test2 %}
-
-<p>
-{{i}}
-</p>
-
-{% endfor %}
