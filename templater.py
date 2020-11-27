@@ -17,9 +17,9 @@ def main():
     header= "Joseph Mahon"
 
     top_choices = OrderedDict()
-    top_choices["home"] = "home.html"
-    top_choices["projects"] = "projects.html"
-    top_choices["test"] = "test.html"
+    top_choices["Home"] = "home.html"
+    top_choices["Programming"] = "projects.html"
+    top_choices["Pottery"] = "test.html"
 
     test2 = [
             "bla1",

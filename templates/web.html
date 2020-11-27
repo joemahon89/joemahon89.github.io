@@ -8,7 +8,7 @@
 
 <style>
   body {
-    font-family: sans-serif;
+    font-family: 'Roboto Slab', serif;
     max-width: 600px;
     margin: 0 auto;
     padding: 0 8px;
@@ -19,7 +19,8 @@ html {
     color: white; }
 
   a { 
-    color: #6bf; 
+    color: #00ffa2;
+    font-size:large; 
     }
   a:visited {
     color: #f8f;
@@ -28,22 +29,30 @@ html {
     color: red; 
     }
 
-
+/*h1, h2, h3, h4, h5, h6 {font-family: 'Roboto Condensed', sans-serif;}*/
+  /*p {font-size:large;}*/
 
 </style>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;900&display=swap" rel="stylesheet"> 
+
 
 <h1>Joseph Mahon</h1>
 
 <nav>
-  |
+  
   {% for k,v in top_choices.items() %}
-    <a href="{{v}}">{{k}}</a> | 
+    <b><a href="{{v}}">{{k}}</a></b>
   {% endfor %}
 
 </nav>
 
 
-{{ test }}
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum ultricies erat, eget euismod orci bibendum sed. Nulla sagittis justo a laoreet posuere. Nulla porttitor id nisl nec vulputate. Sed est lorem, consectetur sed posuere in, pellentesque sed nulla. Ut a viverra ipsum. Fusce nec sem lorem. Quisque sed ex in lorem tincidunt porta. Vestibulum eleifend gravida risus, vitae interdum lacus pharetra at. Mauris pellentesque lobortis nisi, vel vestibulum ligula placerat ut. Donec eget tellus erat. Phasellus volutpat viverra nibh, maximus vehicula magna ornare nec. Quisque elementum iaculis egestas. Donec volutpat orci nulla, at vulputate enim venenatis hendrerit. Curabitur volutpat malesuada magna vel consectetur. Quisque auctor bibendum neque molestie venenatis. Quisque interdum libero vulputate, efficitur turpis ut, feugiat ipsum.
 
+Aliquam vitae congue quam. Quisque eu sapien sagittis, blandit leo vitae, ultrices ligula. Morbi et elit dui. Phasellus augue tellus, commodo sit amet porta at, fringilla non risus. Aliquam vel nibh aliquam, dignissim magna ut, posuere felis. Praesent consequat nibh tellus, at fermentum tellus finibus in. Nam imperdiet id leo non porttitor. Vivamus non est nulla. Aliquam sagittis nisi sed ultricies rhoncus. 
+</p>
 
 
