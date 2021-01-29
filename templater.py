@@ -14,10 +14,11 @@ def get_header():
 
 def get_pages():
     pages = OrderedDict()
-    pages["Home"] = {"url":"home.html"}
-    pages["Programming/Gamedev"] =  {"url":"programming.html"}
-    pages["Ceramics"] =  {"url":"ceramics.html"}
-    pages["Fossils"] =  {"url":"fossils.html"}
+    pages["Home"] = {"url":"index.html", "hidden":"false"}
+    pages["Programming/Gamedev"] =  {"url":"programming.html", "hidden":"false"}
+    pages["Ceramics"] =  {"url":"ceramics.html", "hidden":"false"}
+    pages["Fossils"] =  {"url":"fossils.html", "hidden":"false"}
+    pages["Privacy Policy"] =  {"url":"privacy_policy.html", "hidden":"true"}
     return pages
 
 def get_content(page_title, page_dict):
@@ -29,6 +30,8 @@ def get_content(page_title, page_dict):
         page_content_blocks = ceramics_content_blocks
     elif page_title == "Fossils":
         page_content_blocks = fossils_content_blocks
+    elif page_title == "Privacy Policy":
+        page_content_blocks = privacy_policy_content_blocks
     page_dict["content_blocks"] = page_content_blocks
     return page_dict
 
@@ -93,6 +96,7 @@ def main():
             autoescape=select_autoescape(['html', 'xml']))
     # Get the template
     template = env.get_template('web.html')
+    output_dir = "joemahon89.github.io/"
 
     # Get the page headers
     header = get_header()
@@ -113,7 +117,7 @@ def main():
                                 content_blocks=pages[page_title]["content_blocks"]
                                 )
 
-        with open(page_dict["url"], "w") as file:
+        with open(output_dir+page_dict["url"], "w") as file:
             file.write(html_data)
 
 

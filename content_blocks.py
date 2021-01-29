@@ -177,7 +177,18 @@ fossils_content_blocks = [
 	'''
 
 
-
+privacy_policy_content_blocks = [
+	'''
+	<h2>Privacy Policy</h2>
+	The following privacy policy applies to the apps Lander Larry and 
+	Foxes and Chickens which are published on the Google Play Store.
+	None of the games or apps published by a4x8e6 collect, record, store or 
+	process	any personal information. Your data is stored on your device. 
+	There are no analytics collected. These apps do not access sensitive 
+	permissions or data.
+	Android or the Google Play store itself may track and send data (e.g 
+	crash reports), but this is beyond our control
+	'''
 
 
 
