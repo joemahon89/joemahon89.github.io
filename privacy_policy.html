@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joseph Mahon</title>
+
+<style>
+  body {
+    font-family: 'Roboto Slab', serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 8px;
+  }
+
+/*Used for smaller text to side of headings. It is relative to the tag that surrounds it*/
+span {
+  font-size: 1rem;
+  font-weight: normal;
+  /*padding-left: 10px;*/
+  /*float: right*/
+}
+
+/*Image grid*/
+.column {
+  float: left;
+  /*width: 33.33%;*/
+  /*padding: 5px;*/
+  box-sizing: border-box;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  box-sizing: border-box;
+}
+
+
+
+html { 
+    background: #F2E9E4; 
+    color: #4A4E69;
+    overflow-y: scroll;
+     }
+
+  a { 
+    color: #9A8C98;
+    /*font-size:large; */
+    }
+  a:visited {
+    color: #9A8C98;
+    }
+  a:active {
+    color: #9A8C98; 
+    }
+  a:hover {
+    color: #C9ADA7;
+  }
+
+
+/*h1, h2, h3, h4, h5, h6 {font-family: 'Roboto Condensed', sans-serif;}*/
+  /*p {font-size:large;}*/
+
+</style>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;900&display=swap" rel="stylesheet"> 
+
+<!-- Link for top of page -->
+<a id="top"></a>
+
+<!-- Header -->
+<h1>Joseph Mahon</h1>
+
+
+<!-- Navigation bar -->
+<nav>
+  
+    
+    <!-- <b><a href="{&#39;url&#39;: &#39;index.html&#39;, &#39;hidden&#39;: &#39;false&#39;, &#39;content_blocks&#39;: [&#34;&lt;p&gt;\n\tThis site exists in lieu of a facebook/etc page as I&#39;m not a fan.\n\tIt&#39;s mostly a place for me to chuck projects I&#39;m working \n\ton or hobbies.\n\t&lt;/p&gt;&#34;, &#39;&lt;p&gt;\n\tI do lots of programming in my job but also do it as a hobby. I have a \n\tparticular interest in game development and procedural \n\tgeneration/programmatically generated art. I am an amateur potter and \n\tmainly make slab-built geometric pots. I also collect fossils.\n\t&lt;/p&gt;&#39;]}">Home</a></b> -->
+    <a style="padding:5px" href="index.html">Home</a>
+    
+  
+    
+    <!-- <b><a href="{&#39;url&#39;: &#39;programming.html&#39;, &#39;hidden&#39;: &#39;false&#39;, &#39;content_blocks&#39;: [&#39;&lt;p&gt;\n\tHere are some of my hobby programming projects. Some have source \n\tavailable on &lt;a href=&#34;https://gitlab.com/jmahon&#34;&gt;GitLab&lt;/a&gt; or \n\t&lt;a href=&#34;https://github.com/joemahon89/&#34;&gt;GitHub&lt;/a&gt;, but \n\tif not its likely because the code is a bit messy. If you \n\tare interested in something where the source isn\&#39;t public let me \n\tknow and I can likely neaten it up enough to share! \n\t&lt;/p&gt;&#39;, &#39;&lt;p&gt;\n\t&lt;ul&gt;\n\t\t&lt;li&gt;&lt;a href=&#34;#procbirds&#34;&gt;&#34;Procedural Birds&#34; Twitter bot&lt;/a&gt; ( art 🎨 / procedural generation 🔄 / bots 🤖 )&lt;/li&gt;\n\t\t&lt;li&gt;&lt;a href=&#34;#blenderface&#34;&gt;Blender face extractor&lt;/a&gt; ( ceramics 🏺 / 3D modeling 🎨 )&lt;/li&gt;\n\t\t&lt;li&gt;&lt;a href=&#34;#foxeschickens&#34;&gt;&#34;Foxes and Chickens&#34; game&lt;/a&gt; ( gamedev 🕹 / Android 🤖 )&lt;/li&gt;\n\t\t&lt;li&gt;&lt;a href=&#34;#landerlarry&#34;&gt;&#34;Lander Larry&#34; game&lt;/a&gt; ( gamedev 🕹 / Android 🤖 )&lt;/li&gt;\n\t\t&lt;li&gt;&lt;a href=&#34;#spacecowboy&#34;&gt;&#34;Space Cowboy&#34; game (made in &lt;48h for LDJAM)&lt;/a&gt; ( gamedev 🕹 )&lt;/li&gt;\n\t\t&lt;li&gt;&lt;a href=&#34;#miscgames&#34;&gt;Other small miscellaneous prototypes and projects&lt;/a&gt;&lt;/li&gt;\n\t&lt;/ul&gt;\n\t&lt;/p&gt;&#39;, &#39;&lt;p&gt;\n\t&lt;h2 id=&#34;procbirds&#34;&gt;&#34;Procedural Birds&#34; Twitter bot&lt;/h2&gt; \n\tI am interested in procedural generation and generative art, where \n\timages are created using systems and rules defined in code. I wrote \n\ta program which generates simple, stylised images of birds. Each image \n\tis created from scratch and is completely unique. Every line, angle, \n\tcolour is decided using randomness within defined limits. \n\t&lt;/p&gt;&#39;, &#34;&lt;p&gt;\n\tThe birds are built line by line, starting at the right-most foot, \n\tdrawing the neck length and angle based on the reasonable \n\tapproximations of the possible angles that a bird&#39;s neck may have. \n\tThe head is a random percentage of a full circle between two limits.\n\tThe beak can attach at numerous points on the head and have variable \n\tthicknesses and colours. The angle of the back varies, and can result \n\tbirds ranging in appearance from from a long-necked goose-like bird to \n\tstumpy quails. The tail angle, thickness, colour, number of feathers \n\tis all computed and drawn. The leg length and angle is chosen based on \n\tthe approximate center of gravity of the bird, so that it doesn&#39;t look \n\tlike it will topple over! The colours are chosen from colour schemes \n\tdefined in code, and there is a probability that the bird may have \n\tdifferent coloured wings or tail or both.\n\t&lt;/p&gt;&#34;, &#34;&lt;p&gt;\n\tThe program also generates names for the birds based on their features.\n\tFor example, a bird where the tail has been drawn with short lines may \n\thave the prefix &#39;short-tailed&#39; or &#39;stub-tailed&#39;. Birds with larger angles \n\tbetween the lines on their back may have the prefix &#39;hump-backed&#39;. The \n\tcolours are also used as descriptors, with ornithological sounding \n\tadditions, e.g. &#39;golden-tailed&#39;, &#39;candy winged&#39;, &#39;bronze-feathered&#39;.\n\t&lt;/p&gt;&#34;, &#39;&lt;p&gt;\n\tI stuck the program onto a Raspberry Pi and wrote a small Twitter bot \n\twhich generates a new bird every hour, names it based on its features \n\tand posts the image on Twitter. \n\t&lt;/p&gt;&#39;, &#39;&lt;p&gt;\n\t&lt;a href=&#34;https://twitter.com/pybirdbot/&#34;&gt;\n\t\tBird bot Twitter account 🐦\n\t&lt;/a&gt;\n\t&lt;/p&gt;&#39;, &#39;&lt;p&gt;\n\t&lt;a href=&#34;#top&#34;&gt;Back to top&lt;/a&gt;\n\t&lt;/p&gt;&#39;, &#39;&lt;p&gt;\n\t&lt;h2 id=&#34;landerlarry&#34;&gt;Lander Larry &lt;/h2&gt; \n\tThis is the first Android game I developed. The player controls \n\ta space ship and navigates from the start of the level to a landing pad \n\tat the end of the level. There are obstacles along the way including \n\tmoving lava, gravitational anomalies and falling rocks. The game is free\n\tand there are no ads or in-app-purchases. \n\t&lt;a href=&#34;https://play.google.com/store/apps/details?id=org.godotengine.landerlarry&#34;&gt;\n\t\tGoogle Play Store\n\t&lt;/a&gt;\n\t&lt;/p&gt;&#39;, &#39;&lt;div class=&#34;row&#34;&gt;&lt;div class=&#34;column&#34; style=&#34;width:50.0%&#34;&gt;&lt;img src=&#34;images/landerlarry01.png&#34; alt=&#34;images/landerlarry01.png&#34; style=&#34;width:100%&#34;&gt;&lt;/div&gt;&lt;div class=&#34;column&#34; style=&#34;width:50.0%&#34;&gt;&lt;img src=&#34;images/landerlarry02.jpg&#34; alt=&#34;images/landerlarry02.jpg&#34; style=&#34;width:100%&#34;&gt;&lt;/div&gt;&lt;/div&gt;&#39;, &#39;&lt;div class=&#34;row&#34;&gt;&lt;div class=&#34;column&#34; style=&#34;width:33.333333333333336%&#34;&gt;&lt;img src=&#34;images/landerlarry03.jpg&#34; alt=&#34;images/landerlarry03.jpg&#34; style=&#34;width:100%&#34;&gt;&lt;/div&gt;&lt;div class=&#34;column&#34; style=&#34;width:33.333333333333336%&#34;&gt;&lt;img src=&#34;images/landerlarry04.jpg&#34; alt=&#34;images/landerlarry04.jpg&#34; style=&#34;width:100%&#34;&gt;&lt;/div&gt;&lt;div class=&#34;column&#34; style=&#34;width:33.333333333333336%&#34;&gt;&lt;img src=&#34;images/landerlarry05.jpg&#34; alt=&#34;images/landerlarry05.jpg&#34; style=&#34;width:100%&#34;&gt;&lt;/div&gt;&lt;/div&gt;&#39;, &#39;&lt;p&gt;\n\t&lt;a href=&#34;#top&#34;&gt;Back to top&lt;/a&gt;\n\t&lt;/p&gt;&#39;, &#39;&lt;p&gt;\n\t&lt;h2 id=&#34;foxeschickens&#34;&gt;Foxes and Chickens &lt;/h2&gt; \n\tThis is the second Android game that I published. It is a family-friendly \n\tpuzzle game, where the aim of the game is to move your chickens into their \n\tcoops using a limited number of moves (and without getting eaten by \n\tfoxes!). Levels can be completed in 4, 5 or 6 moves depending on \n\tdifficulty. There are 60 levels and there is only a single solution to \n\teach level which adds to the challenge. The game is free and there are no \n\tads or in-app-purchases. \n\t&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.a4x8e6.foxesandchickens&#34;&gt;\n\t\tGoogle Play Store\n\t&lt;/a&gt;\n\t&lt;/p&gt;&#39;, &#39;&lt;div class=&#34;row&#34;&gt;&lt;div class=&#34;column&#34; style=&#34;width:33.333333333333336%&#34;&gt;&lt;img src=&#34;images/foxes00.png&#34; alt=&#34;images/foxes00.png&#34; style=&#34;width:100%&#34;&gt;&lt;/div&gt;&lt;div class=&#34;column&#34; style=&#34;width:33.333333333333336%&#34;&gt;&lt;img src=&#34;images/foxes01.png&#34; alt=&#34;images/foxes01.png&#34; style=&#34;width:100%&#34;&gt;&lt;/div&gt;&lt;div class=&#34;column&#34; style=&#34;width:33.333333333333336%&#34;&gt;&lt;img src=&#34;images/foxes04.png&#34; alt=&#34;images/foxes04.png&#34; style=&#34;width:100%&#34;&gt;&lt;/div&gt;&lt;/div&gt;&#39;, &#39;&lt;p&gt;\n\t&lt;a href=&#34;#top&#34;&gt;Back to top&lt;/a&gt;\n\t&lt;/p&gt;&#39;]}">Programming/Gamedev</a></b> -->
+    <a style="padding:5px" href="programming.html">Programming/Gamedev</a>
+    
+  
+    
+    <!-- <b><a href="{&#39;url&#39;: &#39;ceramics.html&#39;, &#39;hidden&#39;: &#39;false&#39;, &#39;content_blocks&#39;: [&#39;&lt;p&gt;\n\tI have been doing ceramics/pottery for a few years. I started with an \n\tevening class once a week, but now just do my own thing and take my pieces \n\tto a local studio for firing. I am still a definite amateur and mostly \n\tmake things up as I go along.\n\t&lt;/p&gt;&#39;, &#39;&lt;p&gt;\n\tI really like geometric, angular forms and so this is what I make the \n\tmost of. These are made using clay which has been wedged (kneaded to \n\tremove the air) and rolled out to the desired thickness. Shapes can then \n\tbe cut out and joined together by scoring the edge of the clay and \n\tapplying wet clay (a bit like glue). The angles required for this can \n\tbe a bit tricky so I wrote a Blender script so I could easily create \n\tdesigns and made an adjustable mitre cutter to cut any angle.\n\n\t&lt;/p&gt;&#39;]}">Ceramics</a></b> -->
+    <a style="padding:5px" href="ceramics.html">Ceramics</a>
+    
+  
+    
+    <!-- <b><a href="{&#39;url&#39;: &#39;fossils.html&#39;, &#39;hidden&#39;: &#39;false&#39;, &#39;content_blocks&#39;: [&#39;&lt;p&gt;\n\tI enjoy looking for fossils. The most productive area somewhat close to \n\tme is the East/North Yorkshire coast. Some locations on this coastline \n\tare productive for Jurassic fossils like \n\t&lt;a href=&#34;#ammonites&#34;&gt;ammonites&lt;/a&gt;, &lt;a href=&#34;#belemnites&#34;&gt;belemnites&lt;/a&gt; \n\t(squid-like creatures) and &lt;a href=&#34;#bivalves&#34;&gt;bivalves&lt;/a&gt; (shells). \n\tYou can also find marine reptile remains (although I have yet to find \n\tany!) and &lt;a href=&#34;#jet&#34;&gt;Whitby jet&lt;/a&gt;. Here are some of my favourite \n\tfossils that I have collected &amp;#129460;\n\t&lt;/p&gt;&#39;]}">Fossils</a></b> -->
+    <a style="padding:5px" href="fossils.html">Fossils</a>
+    
+  
+    
+  
+</nav>
+
+<!-- Main content -->
+
+  <p>
+	<h2>Privacy Policy</h2>
+	The following privacy policy applies to the apps <b>Lander Larry</b> and 
+	<b>Foxes and Chickens</b> which are published on the Google Play Store.
+	None of the games or apps published by a4x8e6 collect, record, store or 
+	process	any personal information. Your data is stored on your device. 
+	There are no analytics collected. These apps do not access sensitive 
+	permissions or data.
+	Android or the Google Play store itself may track and send data (e.g 
+	crash reports), but this is beyond our control
+	</p>
+
