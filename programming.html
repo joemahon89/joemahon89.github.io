@@ -9,7 +9,7 @@
 <style>
   body {
     font-family: 'Roboto Slab', serif;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 8px;
   }
@@ -28,6 +28,15 @@ span {
   padding-right: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
+}
+
+/*Coloured block*/
+#blockdiv {
+  padding-top: 0.2rem;
+  padding-right: 3rem;
+  padding-bottom: 0.2rem;
+  padding-left: 3rem;
+  background: #ffaa5e
 }
 
 /*Padding for the images*/
@@ -56,23 +65,26 @@ span {
 
 
 html { 
-    background: #F2E9E4; 
-    color: #4A4E69;
+    /*background: #F2E9E4; */
+    /*Background*/
+    background: #203c56; 
+    /*Body text colour*/
+    color: #544e68;
     overflow-y: scroll;
      }
 
   a { 
-    color: #9A8C98;
+    color: #8d697a ;
     /*font-size:large; */
     }
   a:visited {
-    color: #9A8C98;
+    color: #8d697a ;
     }
   a:active {
-    color: #9A8C98; 
+    color: #8d697a ; 
     }
   a:hover {
-    color: #C9ADA7;
+    color: #544e68;
   }
 
 
@@ -88,38 +100,42 @@ html {
 <!-- Link for top of page -->
 <a id="top"></a>
 
-<div id="bodydiv">
 
-<!-- Header -->
-<h1>Joseph Mahon</h1>
+<br>
+<!-- Main body stuff -->
+<div id="blockdiv">
+
+  <!-- Header -->
+  <h1>Joseph Mahon</h1>
 
 
-<!-- Navigation bar -->
-<nav>
-  
-    
-    <a style="padding:5px" href="index.html">Home</a>
-    
-  
-    
-    <a style="padding:5px" href="programming.html">Programming/Gamedev</a>
-    
-  
-    
-    <a style="padding:5px" href="ceramics.html">Ceramics</a>
-    
-  
-    
-    <a style="padding:5px" href="fossils.html">Fossils</a>
-    
-  
-    
-  
-</nav>
 
-<!-- Main content -->
+  <!-- Navigation bar -->
+  <nav>
+    
+      
+      <a style="padding:5px" href="index.html">Home</a>
+      
+    
+      
+      <a style="padding:5px" href="programming.html">Programming/Gamedev</a>
+      
+    
+      
+      <a style="padding:5px" href="ceramics.html">Ceramics</a>
+      
+    
+      
+      <a style="padding:5px" href="fossils.html">Fossils</a>
+      
+    
+      
+    
+  </nav>
 
-  <p>
+  <!-- Main content -->
+  
+    <p>
 	Here are some of my hobby programming projects. Some have source 
 	available on <a href="https://gitlab.com/jmahon">GitLab</a> or 
 	<a href="https://github.com/joemahon89/">GitHub</a>, but 
@@ -127,20 +143,20 @@ html {
 	are interested in something where the source isn't public let me 
 	know and I can likely neaten it up enough to share! 
 	</p>
-
-  <p>
-	<ul>
-		<li><a href="#froggame">Frog Game</a> ( gamedev 🕹 )</li>
-		<li><a href="#procbirds">"Procedural Birds" Twitter bot</a> ( art 🎨 / procedural generation 🔄 / bots 🤖 )</li>
-		<li><a href="#foxeschickens">"Foxes and Chickens" game</a> ( gamedev 🕹 / Android 🤖 )</li>
-		<li><a href="#landerlarry">"Lander Larry" game</a> ( gamedev 🕹 / Android 🤖 )</li>
-		<li><a href="#spacecowboy">"Space Cowboy" game (made in <48h for LDJAM)</a> ( gamedev 🕹 )</li>
-		<li><a href="#pubcrime">"Pub Crime" A web database with crime types/rates near UK pubs</a> ( data 📊 )</li>
-		<li><a href="#misc">Other small miscellaneous prototypes and projects</a></li>
+  
+    <p>
+	<ul style="list-style: none;">
+		<li>🎮🕹️ - <a href="#froggame">Frog Game</a></li>
+		<li>🎨🐦 - <a href="#procbirds">"Procedural Birds" Twitter bot</a></li>
+		<li>🎮🕹️ - <a href="#foxeschickens">"Foxes and Chickens" game</a></li>
+		<li>🎮🕹️ - <a href="#landerlarry">"Lander Larry" game</a></li>
+		<li>🎮🕹️ - <a href="#spacecowboy">"Space Cowboy" game (made in <48h for LDJAM)</a></li>
+		<li>📊📈 - <a href="#pubcrime">"Pub Crime" A web database with crime types/rates near UK pubs</a></li>
+		<li>💡❓ -<a href="#misc">Other small miscellaneous prototypes and projects</a></li>
 	</ul>
 	</p>
-
-  <p>
+  
+    <p>
 	<h2 id="froggame">Frog Game</h2> 
 	Current project, an as-yet untitled game about a frog. Platforming and 
 	RPG elements, and inspired by PlayStation 1 era games like Tomba
@@ -157,14 +173,14 @@ html {
 	</iframe> 
 	</div>
 	</p>
-
-  <div class="row"><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/froggame01.png" alt="images/froggame01.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/froggame02.png" alt="images/froggame02.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/froggame03.png" alt="images/froggame03.png" style="width:100%"></div></div>
-
-  <p>
+  
+    <div class="row"><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/froggame01.png" alt="images/froggame01.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/froggame02.png" alt="images/froggame02.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/froggame03.png" alt="images/froggame03.png" style="width:100%"></div></div>
+  
+    <p>
 	<a href="#top">Back to top</a>
 	</p>
-
-  <p>
+  
+    <p>
 	<h2 id="procbirds">"Procedural Birds" Twitter bot</h2> 
 	I am interested in procedural generation and generative art, where 
 	images are created using systems and rules defined in code. I wrote 
@@ -172,10 +188,10 @@ html {
 	is created from scratch and is completely unique. Every line, angle, 
 	colour is decided using randomness within defined limits. 
 	</p>
-
-  <div class="row"><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/bird01.png" alt="images/bird01.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/bird18.png" alt="images/bird18.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/bird14.png" alt="images/bird14.png" style="width:100%"></div></div>
-
-  <p>
+  
+    <div class="row"><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/bird01.png" alt="images/bird01.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/bird18.png" alt="images/bird18.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/bird14.png" alt="images/bird14.png" style="width:100%"></div></div>
+  
+    <p>
 	The birds are built line by line, starting at the right-most foot, 
 	drawing the neck length and angle based on the reasonable 
 	approximations of the possible angles that a bird's neck may have. 
@@ -190,12 +206,12 @@ html {
 	defined in code, and there is a probability that the bird may have 
 	different coloured wings or tail or both.
 	</p>
-
-  <div class="row"><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird02.png" alt="images/bird02.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird03.png" alt="images/bird03.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird04.png" alt="images/bird04.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird05.png" alt="images/bird05.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird06.png" alt="images/bird06.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird07.png" alt="images/bird07.png" style="width:100%"></div></div>
-
-  <div class="row"><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird08.png" alt="images/bird08.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird09.png" alt="images/bird09.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird10.png" alt="images/bird10.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird11.png" alt="images/bird11.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird12.png" alt="images/bird12.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird13.png" alt="images/bird13.png" style="width:100%"></div></div>
-
-  <p>
+  
+    <div class="row"><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird02.png" alt="images/bird02.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird03.png" alt="images/bird03.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird04.png" alt="images/bird04.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird05.png" alt="images/bird05.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird06.png" alt="images/bird06.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird07.png" alt="images/bird07.png" style="width:100%"></div></div>
+  
+    <div class="row"><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird08.png" alt="images/bird08.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird09.png" alt="images/bird09.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird10.png" alt="images/bird10.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird11.png" alt="images/bird11.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird12.png" alt="images/bird12.png" style="width:100%"></div><div id="picturediv" class="column" style="width:16.666666666666668%"><img src="images/bird13.png" alt="images/bird13.png" style="width:100%"></div></div>
+  
+    <p>
 	The program also generates names for the birds based on their features.
 	For example, a bird where the tail has been drawn with short lines may 
 	have the prefix 'short-tailed' or 'stub-tailed'. Birds with larger angles 
@@ -203,26 +219,26 @@ html {
 	colours are also used as descriptors, with ornithological sounding 
 	additions, e.g. 'golden-tailed', 'candy winged', 'bronze-feathered'.
 	</p>
-
-  <div class="row"><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/bird15.png" alt="images/bird15.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/bird16.png" alt="images/bird16.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/bird17.png" alt="images/bird17.png" style="width:100%"></div></div>
-
-  <p>
+  
+    <div class="row"><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/bird15.png" alt="images/bird15.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/bird16.png" alt="images/bird16.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/bird17.png" alt="images/bird17.png" style="width:100%"></div></div>
+  
+    <p>
 	I stuck the program onto a Raspberry Pi and wrote a small Twitter bot 
 	which generates a new bird every hour, names it based on its features 
 	and posts the image on Twitter. 
 	</p>
-
-  <p>
+  
+    <p>
 	<a href="https://twitter.com/pybirdbot/">
 		Bird bot Twitter account 🐦
 	</a>
 	</p>
-
-  <p>
+  
+    <p>
 	<a href="#top">Back to top</a>
 	</p>
-
-  <p>
+  
+    <p>
 	<h2 id="landerlarry">Lander Larry </h2> 
 	This is the first Android game I developed. The player controls 
 	a space ship and navigates from the start of the level to a landing pad 
@@ -233,16 +249,16 @@ html {
 		Google Play Store
 	</a>
 	</p>
-
-  <div class="row"><div id="picturediv" class="column" style="width:50.0%"><img src="images/landerlarry01.png" alt="images/landerlarry01.png" style="width:100%"></div><div id="picturediv" class="column" style="width:50.0%"><img src="images/landerlarry02.jpg" alt="images/landerlarry02.jpg" style="width:100%"></div></div>
-
-  <div class="row"><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/landerlarry03.jpg" alt="images/landerlarry03.jpg" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/landerlarry04.jpg" alt="images/landerlarry04.jpg" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/landerlarry05.jpg" alt="images/landerlarry05.jpg" style="width:100%"></div></div>
-
-  <p>
+  
+    <div class="row"><div id="picturediv" class="column" style="width:50.0%"><img src="images/landerlarry01.png" alt="images/landerlarry01.png" style="width:100%"></div><div id="picturediv" class="column" style="width:50.0%"><img src="images/landerlarry02.jpg" alt="images/landerlarry02.jpg" style="width:100%"></div></div>
+  
+    <div class="row"><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/landerlarry03.jpg" alt="images/landerlarry03.jpg" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/landerlarry04.jpg" alt="images/landerlarry04.jpg" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/landerlarry05.jpg" alt="images/landerlarry05.jpg" style="width:100%"></div></div>
+  
+    <p>
 	<a href="#top">Back to top</a>
 	</p>
-
-  <p>
+  
+    <p>
 	<h2 id="foxeschickens">Foxes and Chickens </h2> 
 	This is the second Android game that I published. It is a family-friendly 
 	puzzle game, where the aim of the game is to move your chickens into their 
@@ -255,14 +271,14 @@ html {
 		Google Play Store
 	</a>
 	</p>
-
-  <div class="row"><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/foxes00.png" alt="images/foxes00.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/foxes01.png" alt="images/foxes01.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/foxes04.png" alt="images/foxes04.png" style="width:100%"></div></div>
-
-  <p>
+  
+    <div class="row"><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/foxes00.png" alt="images/foxes00.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/foxes01.png" alt="images/foxes01.png" style="width:100%"></div><div id="picturediv" class="column" style="width:33.333333333333336%"><img src="images/foxes04.png" alt="images/foxes04.png" style="width:100%"></div></div>
+  
+    <p>
 	<a href="#top">Back to top</a>
 	</p>
-
-  <p>
+  
+    <p>
 	<h2 id="spacecowboy">Space Cowboy (LDJAM47 Entry) </h2> 
 	Ludum Dare (LDJAM) is a twice-yearly game jam, with a challenge to create 
 	a game from scratch in 48 hours which fits a set theme. I entered the 
@@ -270,12 +286,12 @@ html {
 	Space Cowboy, where where you play as as farmer on an alien planet, 
 	lassoing the different alien farmyard creatures. 
 	</p>
-
-  <div class="row"><div id="picturediv" class="column" style="width:100.0%"><img src="images/spacecowboy_header.png" alt="images/spacecowboy_header.png" style="width:100%"></div></div>
-
-  <div class="row"><div id="picturediv" class="column" style="width:50.0%"><img src="images/spacecowboy02.gif" alt="images/spacecowboy02.gif" style="width:100%"></div><div id="picturediv" class="column" style="width:50.0%"><img src="images/spacecowboy03.png" alt="images/spacecowboy03.png" style="width:100%"></div></div>
-
-  <p>
+  
+    <div class="row"><div id="picturediv" class="column" style="width:100.0%"><img src="images/spacecowboy_header.png" alt="images/spacecowboy_header.png" style="width:100%"></div></div>
+  
+    <div class="row"><div id="picturediv" class="column" style="width:50.0%"><img src="images/spacecowboy02.gif" alt="images/spacecowboy02.gif" style="width:100%"></div><div id="picturediv" class="column" style="width:50.0%"><img src="images/spacecowboy03.png" alt="images/spacecowboy03.png" style="width:100%"></div></div>
+  
+    <p>
 	There were 800 entries, and I came 309th 
 	overall, and 103rd in the 'Innovation' category which I was pretty 
 	happy about. Source code is available on 
@@ -288,54 +304,54 @@ html {
 		here
 	</a>
 	</p>
-
-  <p>
+  
+    <p>
 	<a href="#top">Back to top</a>
 	</p>
-
-  <p>
+  
+    <p>
 	<h2 id="pubcrime">Pub Crime site </h2> 
 	Combines the "Open Pubs" dataset and crime data from data.police.uk.
 	Crimes within 100m radius of a pub are displayed. You can search for a 
 	pub or look at pubs where crimes of different types is highest.
 	<a href="https://pubcrime.pythonanywhere.com/crime_types/">Pub Crime</a>
 	</p>
-
-  <div class="row"><div id="picturediv" class="column" style="width:100.0%"><img src="images/pubs01.png" alt="images/pubs01.png" style="width:100%"></div></div>
-
-  <p>
+  
+    <div class="row"><div id="picturediv" class="column" style="width:100.0%"><img src="images/pubs01.png" alt="images/pubs01.png" style="width:100%"></div></div>
+  
+    <p>
 	<a href="#top">Back to top</a>
 	</p>
-
-  <p>
+  
+    <p>
 	<h2 id="misc">Miscellaneous</h2> 
 	Here are some other bits and bobs that I have made. Most were never 
 	completed and only left as prototypes or half finished 
 	</p>
-
-  <p>
+  
+    <p>
 	<h4>Plane Game</h4>
 	Top-down WWI air combat game. Flying a Sopwith Camel and shooting down 
 	Albatros D.III fighters, Gotha G.V bombers and Zeppelins. Enemy planes 
 	follow different paths and can drop health when destroyed. Didn't 
 	finish this, maybe some day.
 	</p>
-
-  <div class="row"><div id="picturediv" class="column" style="width:25.0%"><img src="images/planes_title.png" alt="images/planes_title.png" style="width:100%"></div><div id="picturediv" class="column" style="width:25.0%"><img src="images/planes00.gif" alt="images/planes00.gif" style="width:100%"></div><div id="picturediv" class="column" style="width:25.0%"><img src="" alt="" style="width:100%"></div><div id="picturediv" class="column" style="width:25.0%"><img src="" alt="" style="width:100%"></div></div>
-
-  <p>
+  
+    <div class="row"><div id="picturediv" class="column" style="width:25.0%"><img src="images/planes_title.png" alt="images/planes_title.png" style="width:100%"></div><div id="picturediv" class="column" style="width:25.0%"><img src="images/planes00.gif" alt="images/planes00.gif" style="width:100%"></div><div id="picturediv" class="column" style="width:25.0%"><img src="" alt="" style="width:100%"></div><div id="picturediv" class="column" style="width:25.0%"><img src="" alt="" style="width:100%"></div></div>
+  
+    <p>
 	<h4>Strategy Game</h4>
 	Isometric turn-based strategy game with tanks and infantry. Some basic 
 	movement and attacking completed but thats about it. Might refactor and 
 	complete some day.
 	</p>
-
-  <div class="row"><div id="picturediv" class="column" style="width:50.0%"><img src="images/tanks01.png" alt="images/tanks01.png" style="width:100%"></div><div id="picturediv" class="column" style="width:50.0%"><img src="" alt="" style="width:100%"></div></div>
-
-  <p>
+  
+    <div class="row"><div id="picturediv" class="column" style="width:50.0%"><img src="images/tanks01.png" alt="images/tanks01.png" style="width:100%"></div><div id="picturediv" class="column" style="width:50.0%"><img src="" alt="" style="width:100%"></div></div>
+  
+    <p>
 	<a href="#top">Back to top</a>
 	</p>
-
+  
 
 </div>
 
